@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--    <link href="dist/css/bootstrap.min.css" rel="stylesheet">-->
+    <!--    <link href="bootstrap-icons.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+<body>
+
+<!--    Nav Bar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <a class="navbar-brand" href="#">
+        <img src="logo.png" style="width: 50px; height: 50px">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">About Us <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Programme</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Our Team</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">News and Archive</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Mentions</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Careers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <button class="btn btn-success my-2 my-sm-0" type="submit">Donate</button>
+        </form>
+    </div>
+</nav>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">About</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div style="background-color: #F2F2F2" class="modal-body">
+                <div class="row no-gutters">
+                    <div class="col-md-2">
+                        <div class="text-center">
+                            <img src="assets/teams/1.png" alt="...">
+                        </div>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="card-body">
+                            <h5 class="card-title">Adedoyin Adeleke</h5>
+                            <small class="card-text">Italy and Nigeria</small>
+                            <p class="card-text"><strong>Founder/Executive Director</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-2 modal-body">
+                <h5>Profile</h5>
+                <div>
+                    <div>Adedoyin Adeleke is a sustainable energy researcher, currently pursuing a doctoral degree within the UNESCO Chair in Energy for Sustainable Development at the Department of Energy, Politecnico di Milano, Milan, Italy and the Founder and Executive Director of the International Support Network for African Development (ISNAD-Africa). He holds a bachelor’s degree in Mechanical Engineering from Obafemi Awolowo University, Ile-Ife, and a multidisciplinary master’s degree in Energy Studies from University of Ibadan, Ibadan, Nigeria. His interest in using theoretical knowledge to impact social and economic development led him to co-invent a 10-seconds chicken de-feathering machine during his undergraduate studies. As his master’s dissertation, he researched on the “Sustainability of Solar Mini-Grids in Nigeria” which profiles factors responsible for failure and success of solar mini-grids in Nigeria.</div>
+                    <br>
+                    <div>Adedoyin is named in the 2018 40 Under 40 list of Changemakers in the global solar energy industry (Renewable Energy World, USA) and also the first African to be named in 30 Under 30 list of Changemakers in Environmental Education (North America Association for Environmental Education, USA) since the commencement of the awarding initiative. Also in 2018, he is among the Top 100 Shakers and Movers in e-learning in Africa as rated by Bob Little Press and Public Relations, United Kingdom.</div>
+                    <br>
+                    <div>Adedoyin has also received numerous scholarship awards for his excellent educational performance including the Federal Scholarship Board Undergraduate Award, Nigeria (2009-2012) which funded his undergraduate studies and the MacArthur Foundation Grant Scholarship (2015 – 2016) at the Centre for Petroleum, Energy Economics and Law, Ibadan, Nigeria for his master’s degree programme; Fellowship from the German</div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<main role="main">
+    <div class="container-fluid">
+        <div class="container">
+            <h1>Our Team</h1>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Our People</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Advisory Board</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="row">
+                        <div class="mt-3 col-md-3 col-xs-12 col-sm-12">
+                            <div class="card" style="background-color: #F2F2F2; background: #F2F2F2;">
+                                <div class="text-center">
+                                    <img src="assets/teams/1.png" class="img-fluid mt-3">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Adedoyin Adeleke</h5>
+                                    <small>Italy and Nigeria</small>
+                                    <p style="font-size: 15px">Founder/Executive Director</p>
+                                    <a style="color: #719430" data-toggle="modal" data-target="#exampleModal" type="button" class="btn btn-default" aria-label="Left Align">
+                                        Read Profile <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3 col-md-3 col-xs-12 col-sm-12">
+                            <div class="card" style="background-color: #F2F2F2; background: #F2F2F2;">
+                                <div class="text-center">
+                                    <img src="assets/teams/1.png" class="img-fluid mt-3">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Adedoyin Adeleke</h5>
+                                    <small>Italy and Nigeria</small>
+                                    <p style="font-size: 15px">Founder/Executive Director</p>
+                                    <a style="color: #719430" type="button" class="btn btn-default" aria-label="Left Align">
+                                        Read Profile <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3 col-md-3 col-xs-12 col-sm-12">
+                            <div class="card" style="background-color: #F2F2F2; background: #F2F2F2;">
+                                <div class="text-center">
+                                    <img src="assets/teams/1.png" class="img-fluid mt-3">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Adedoyin Adeleke</h5>
+                                    <small>Italy and Nigeria</small>
+                                    <p style="font-size: 15px">Founder/Executive Director</p>
+                                    <a style="color: #719430" type="button" class="btn btn-default" aria-label="Left Align">
+                                        Read Profile <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3 col-md-3 col-xs-12 col-sm-12">
+                            <div class="card" style="background-color: #F2F2F2; background: #F2F2F2;">
+                                <div class="text-center">
+                                    <img src="assets/teams/1.png" class="img-fluid mt-3">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Adedoyin Adeleke</h5>
+                                    <small>Italy and Nigeria</small>
+                                    <p style="font-size: 15px">Founder/Executive Director</p>
+                                    <a style="color: #719430" type="button" class="btn btn-default" aria-label="Left Align">
+                                        Read Profile <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="mt-3 col-md-3 col-xs-12 col-sm-12">
+                            <div class="card" style="background-color: #F2F2F2; background: #F2F2F2;">
+                                <div class="text-center">
+                                    <img src="assets/teams/1.png" class="img-fluid mt-3">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Adedoyin Adeleke</h5>
+                                    <small>Italy and Nigeria</small>
+                                    <p style="font-size: 15px">Founder/Executive Director</p>
+                                    <a style="color: #719430" type="button" class="btn btn-default" aria-label="Left Align">
+                                        Read Profile <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3 col-md-3 col-xs-12 col-sm-12">
+                            <div class="card" style="background-color: #F2F2F2; background: #F2F2F2;">
+                                <div class="text-center">
+                                    <img src="assets/teams/1.png" class="img-fluid mt-3">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Adedoyin Adeleke</h5>
+                                    <small>Italy and Nigeria</small>
+                                    <p style="font-size: 15px">Founder/Executive Director</p>
+                                    <a style="color: #719430" type="button" class="btn btn-default" aria-label="Left Align">
+                                        Read Profile <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3 col-md-3 col-xs-12 col-sm-12">
+                            <div class="card" style="background-color: #F2F2F2; background: #F2F2F2;">
+                                <div class="text-center">
+                                    <img src="assets/teams/1.png" class="img-fluid mt-3">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Adedoyin Adeleke</h5>
+                                    <small>Italy and Nigeria</small>
+                                    <p style="font-size: 15px">Founder/Executive Director</p>
+                                    <a style="color: #719430" type="button" class="btn btn-default" aria-label="Left Align">
+                                        Read Profile <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3 col-md-3 col-xs-12 col-sm-12">
+                            <div class="card" style="background-color: #F2F2F2; background: #F2F2F2;">
+                                <div class="text-center">
+                                    <img src="assets/teams/1.png" class="img-fluid mt-3">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Adedoyin Adeleke</h5>
+                                    <small>Italy and Nigeria</small>
+                                    <p style="font-size: 15px">Founder/Executive Director</p>
+                                    <a style="color: #719430" type="button" class="btn btn-default" aria-label="Left Align">
+                                        Read Profile <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="mt-3 col-md-3 col-xs-12 col-sm-12">
+                            <div class="card" style="background-color: #F2F2F2; background: #F2F2F2;">
+                                <div class="text-center">
+                                    <img src="assets/teams/1.png" class="img-fluid mt-3">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Adedoyin Adeleke</h5>
+                                    <small>Italy and Nigeria</small>
+                                    <p style="font-size: 15px">Founder/Executive Director</p>
+                                    <a style="color: #719430" type="button" class="btn btn-default" aria-label="Left Align">
+                                        Read Profile <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3 col-md-3 col-xs-12 col-sm-12">
+                            <div class="card" style="background-color: #F2F2F2; background: #F2F2F2;">
+                                <div class="text-center">
+                                    <img src="assets/teams/1.png" class="img-fluid mt-3">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Adedoyin Adeleke</h5>
+                                    <small>Italy and Nigeria</small>
+                                    <p style="font-size: 15px">Founder/Executive Director</p>
+                                    <a style="color: #719430" type="button" class="btn btn-default" aria-label="Left Align">
+                                        Read Profile <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3 col-md-3 col-xs-12 col-sm-12">
+                            <div class="card" style="background-color: #F2F2F2; background: #F2F2F2;">
+                                <div class="text-center">
+                                    <img src="assets/teams/1.png" class="img-fluid mt-3">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Adedoyin Adeleke</h5>
+                                    <small>Italy and Nigeria</small>
+                                    <p style="font-size: 15px">Founder/Executive Director</p>
+                                    <a style="color: #719430" type="button" class="btn btn-default" aria-label="Left Align">
+                                        Read Profile <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3 col-md-3 col-xs-12 col-sm-12">
+                            <div class="card" style="background-color: #F2F2F2; background: #F2F2F2;">
+                                <div class="text-center">
+                                    <img src="assets/teams/1.png" class="img-fluid mt-3">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Adedoyin Adeleke</h5>
+                                    <small>Italy and Nigeria</small>
+                                    <p style="font-size: 15px">Founder/Executive Director</p>
+                                    <a style="color: #719430" type="button" class="btn btn-default" aria-label="Left Align">
+                                        Read Profile <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="mt-3 col-md-3 col-xs-12 col-sm-12">
+                            <div class="card" style="background-color: #F2F2F2; background: #F2F2F2;">
+                                <div class="text-center">
+                                    <img src="assets/teams/1.png" class="img-fluid mt-3">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Adedoyin Adeleke</h5>
+                                    <small>Italy and Nigeria</small>
+                                    <p style="font-size: 15px">Founder/Executive Director</p>
+                                    <a style="color: #719430" type="button" class="btn btn-default" aria-label="Left Align">
+                                        Read Profile <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3 col-md-3 col-xs-12 col-sm-12">
+                            <div class="card" style="background-color: #F2F2F2; background: #F2F2F2;">
+                                <div class="text-center">
+                                    <img src="assets/teams/1.png" class="img-fluid mt-3">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Adedoyin Adeleke</h5>
+                                    <small>Italy and Nigeria</small>
+                                    <p style="font-size: 15px">Founder/Executive Director</p>
+                                    <a style="color: #719430" type="button" class="btn btn-default" aria-label="Left Align">
+                                        Read Profile <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3 col-md-3 col-xs-12 col-sm-12">
+                            <div class="card" style="background-color: #F2F2F2; background: #F2F2F2;">
+                                <div class="text-center">
+                                    <img src="assets/teams/1.png" class="img-fluid mt-3">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Adedoyin Adeleke</h5>
+                                    <small>Italy and Nigeria</small>
+                                    <p style="font-size: 15px">Founder/Executive Director</p>
+                                    <a style="color: #719430" type="button" class="btn btn-default" aria-label="Left Align">
+                                        Read Profile <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3 col-md-3 col-xs-12 col-sm-12">
+                            <div class="card" style="background-color: #F2F2F2; background: #F2F2F2;">
+                                <div class="text-center">
+                                    <img src="assets/teams/1.png" class="img-fluid mt-3">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Adedoyin Adeleke</h5>
+                                    <small>Italy and Nigeria</small>
+                                    <p style="font-size: 15px">Founder/Executive Director</p>
+                                    <a style="color: #719430" type="button" class="btn btn-default" aria-label="Left Align">
+                                        Read Profile <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="mt-3 col-md-3 col-xs-12 col-sm-12">
+                            <div class="card" style="background-color: #F2F2F2; background: #F2F2F2;">
+                                <div class="text-center">
+                                    <img src="assets/teams/1.png" class="img-fluid mt-3">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Adedoyin Adeleke</h5>
+                                    <small>Italy and Nigeria</small>
+                                    <p style="font-size: 15px">Founder/Executive Director</p>
+                                    <a style="color: #719430" type="button" class="btn btn-default" aria-label="Left Align">
+                                        Read Profile <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3 col-md-3 col-xs-12 col-sm-12">
+                            <div class="card" style="background-color: #F2F2F2; background: #F2F2F2;">
+                                <div class="text-center">
+                                    <img src="assets/teams/1.png" class="img-fluid mt-3">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Adedoyin Adeleke</h5>
+                                    <small>Italy and Nigeria</small>
+                                    <p style="font-size: 15px">Founder/Executive Director</p>
+                                    <a style="color: #719430" type="button" class="btn btn-default" aria-label="Left Align">
+                                        Read Profile <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3 col-md-3 col-xs-12 col-sm-12">
+                            <div class="card" style="background-color: #F2F2F2; background: #F2F2F2;">
+                                <div class="text-center">
+                                    <img src="assets/teams/1.png" class="img-fluid mt-3">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Adedoyin Adeleke</h5>
+                                    <small>Italy and Nigeria</small>
+                                    <p style="font-size: 15px">Founder/Executive Director</p>
+                                    <a style="color: #719430" type="button" class="btn btn-default" aria-label="Left Align">
+                                        Read Profile <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3 col-md-3 col-xs-12 col-sm-12">
+                            <div class="card" style="background-color: #F2F2F2; background: #F2F2F2;">
+                                <div class="text-center">
+                                    <img src="assets/teams/1.png" class="img-fluid mt-3">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Adedoyin Adeleke</h5>
+                                    <small>Italy and Nigeria</small>
+                                    <p style="font-size: 15px">Founder/Executive Director</p>
+                                    <a style="color: #719430" type="button" class="btn btn-default" aria-label="Left Align">
+                                        Read Profile <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="mt-3 col-md-3 col-xs-12 col-sm-12">
+                            <div class="card" style="background-color: #F2F2F2; background: #F2F2F2;">
+                                <div class="text-center">
+                                    <img src="assets/teams/1.png" class="img-fluid mt-3">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Adedoyin Adeleke</h5>
+                                    <small>Italy and Nigeria</small>
+                                    <p style="font-size: 15px">Founder/Executive Director</p>
+                                    <a style="color: #719430" type="button" class="btn btn-default" aria-label="Left Align">
+                                        Read Profile <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3 col-md-3 col-xs-12 col-sm-12">
+                            <div class="card" style="background-color: #F2F2F2; background: #F2F2F2;">
+                                <div class="text-center">
+                                    <img src="assets/teams/1.png" class="img-fluid mt-3">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Adedoyin Adeleke</h5>
+                                    <small>Italy and Nigeria</small>
+                                    <p style="font-size: 15px">Founder/Executive Director</p>
+                                    <a style="color: #719430" type="button" class="btn btn-default" aria-label="Left Align">
+                                        Read Profile <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3 col-md-3 col-xs-12 col-sm-12">
+                            <div class="card" style="background-color: #F2F2F2; background: #F2F2F2;">
+                                <div class="text-center">
+                                    <img src="assets/teams/1.png" class="img-fluid mt-3">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Adedoyin Adeleke</h5>
+                                    <small>Italy and Nigeria</small>
+                                    <p style="font-size: 15px">Founder/Executive Director</p>
+                                    <a style="color: #719430" type="button" class="btn btn-default" aria-label="Left Align">
+                                        Read Profile <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3 col-md-3 col-xs-12 col-sm-12">
+                            <div class="card" style="background-color: #F2F2F2; background: #F2F2F2;">
+                                <div class="text-center">
+                                    <img src="assets/teams/1.png" class="img-fluid mt-3">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Adedoyin Adeleke</h5>
+                                    <small>Italy and Nigeria</small>
+                                    <p style="font-size: 15px">Founder/Executive Director</p>
+                                    <a style="color: #719430" type="button" class="btn btn-default" aria-label="Left Align">
+                                        Read Profile <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="mt-3 col-md-3 col-xs-12 col-sm-12">
+                            <div class="card" style="background-color: #F2F2F2; background: #F2F2F2;">
+                                <div class="text-center">
+                                    <img src="assets/teams/1.png" class="img-fluid mt-3">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Adedoyin Adeleke</h5>
+                                    <small>Italy and Nigeria</small>
+                                    <p style="font-size: 15px">Founder/Executive Director</p>
+                                    <a style="color: #719430" type="button" class="btn btn-default" aria-label="Left Align">
+                                        Read Profile <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3 col-md-3 col-xs-12 col-sm-12">
+                            <div class="card" style="background-color: #F2F2F2; background: #F2F2F2;">
+                                <div class="text-center">
+                                    <img src="assets/teams/1.png" class="img-fluid mt-3">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Adedoyin Adeleke</h5>
+                                    <small>Italy and Nigeria</small>
+                                    <p style="font-size: 15px">Founder/Executive Director</p>
+                                    <a style="color: #719430" type="button" class="btn btn-default" aria-label="Left Align">
+                                        Read Profile <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3 col-md-3 col-xs-12 col-sm-12">
+                            <div class="card" style="background-color: #F2F2F2; background: #F2F2F2;">
+                                <div class="text-center">
+                                    <img src="assets/teams/1.png" class="img-fluid mt-3">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Adedoyin Adeleke</h5>
+                                    <small>Italy and Nigeria</small>
+                                    <p style="font-size: 15px">Founder/Executive Director</p>
+                                    <a style="color: #719430" type="button" class="btn btn-default" aria-label="Left Align">
+                                        Read Profile <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3 col-md-3 col-xs-12 col-sm-12">
+                            <div class="card" style="background-color: #F2F2F2; background: #F2F2F2;">
+                                <div class="text-center">
+                                    <img src="assets/teams/1.png" class="img-fluid mt-3">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Adedoyin Adeleke</h5>
+                                    <small>Italy and Nigeria</small>
+                                    <p style="font-size: 15px">Founder/Executive Director</p>
+                                    <a style="color: #719430" type="button" class="btn btn-default" aria-label="Left Align">
+                                        Read Profile <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="row">
+                        <div class="mt-3 col-md-3 col-xs-12 col-sm-12">
+                            <div class="card" style="background-color: #F2F2F2; background: #F2F2F2;">
+                                <div class="text-center">
+                                    <img src="assets/teams/tab1.png" class="img-fluid mt-3">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Professor Howard Alper (Chair)</h5>
+                                    <small>Distinguished Professor, University of Ottawa, Ottawa, Canada</small>
+                                    <a style="color: #719430" type="button" class="btn btn-default" aria-label="Left Align">
+                                        Read Profile <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3 col-md-3 col-xs-12 col-sm-12">
+                            <div class="card" style="background-color: #F2F2F2; background: #F2F2F2;">
+                                <div class="text-center">
+                                    <img src="assets/teams/1.png" class="img-fluid mt-3">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Adedoyin Adeleke</h5>
+                                    <small>Italy and Nigeria</small>
+                                    <p style="font-size: 15px">Founder/Executive Director</p>
+                                    <a style="color: #719430" type="button" class="btn btn-default" aria-label="Left Align">
+                                        Read Profile <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3 col-md-3 col-xs-12 col-sm-12">
+                            <div class="card" style="background-color: #F2F2F2; background: #F2F2F2;">
+                                <div class="text-center">
+                                    <img src="assets/teams/1.png" class="img-fluid mt-3">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Adedoyin Adeleke</h5>
+                                    <small>Italy and Nigeria</small>
+                                    <p style="font-size: 15px">Founder/Executive Director</p>
+                                    <a style="color: #719430" type="button" class="btn btn-default" aria-label="Left Align">
+                                        Read Profile <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="background-image: url('assets/Rectangle 6.png')" class="container-fluid mt-2">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <h2 class="mt-5 text-center text-white">Would you like to make your contributions towards the development of Africa?</h2>
+                    <div class="mb-5">
+                        <button class="btn" style="background-color: #719430; color: white">Join Us</button>
+                        <button class="btn" style="background-color: #E1B005; color: white">Donate</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer style="background-color: #FEF8E3" class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-7 mt-5">
+                <div class="text-bold" style="font-size: 18px; font-weight: normal; line-height: 25px;">CONTACT ISNAD AFRICA</div>
+                <ul class="list-unstyled">
+                    <li class="media">
+                        <img height="50" src="assets/location%201.png" class="mr-3" alt="...">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">Centre for Petroleum, Energy Economics and Law</h5>
+                            <p>7, Parry Road, University of Ibadan, Ibadan, Nigeria</p>
+                        </div>
+                    </li>
+                    <li class="media my-4">
+                        <img height="50" src="assets/mail%201.png" class="mr-3" alt="...">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">7, Parry Road, University of Ibadan, Ibadan, Nigeria</h5>
+                            <p>isnad.africa@gmail.com</p>
+                        </div>
+                    </li>
+                    <li class="media">
+                        <img height="50" src="assets/call%201.png" class="mr-3" alt="...">
+                        <div class="media-body">
+                            <h3 class="mt-0 mb-1">+39 34 7056 0059</h3>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-5 mt-5 text-right">
+                <p>Lets Connect</p>
+                <div class="">
+                    <a>
+                        <img height="30" src="assets/Twitter.png">
+                    </a>
+                    <a>
+                        <img height="30" src="assets/Facebook.png">
+                    </a>
+                    <a>
+                        <img height="30" src="assets/LinkedIN.png">
+                    </a>
+                </div>
+                <div class="form-group">
+                    <label class="text-bold">Subscribe to ISNAD-Africa's Newsletter</label>
+                    <input class="form-control" type="email" placeholder="Your Email"/>
+                </div>
+                <button style="background-color: #719430; color: white" class="btn">Subscribe</button>
+            </div>
+        </div>
+        <hr style="background-color: #E1B005">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" class="mr-5" style="width: 50px; height: 50px">
+            </a>
+
+            <div>
+                <form class="form-inline my-2 my-lg-0">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a style="color: #151515" class="nav-link" href="#">About Us <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="color: #151515" class="nav-link" href="#">Programme</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="color: #151515" class="nav-link" href="#">Our Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="color: #151515" class="nav-link" href="#">News and Archive</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="color: #151515" class="nav-link" href="#">Mentions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="color: #151515" class="nav-link" href="#">Careers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="color: #151515" class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </nav>
+    </div>
+</footer>
+
+<!--    <script>window.jQuery || document.write('<script src="dist/jquery-slim.min.js"><\/script>')</script>-->
+<!--    <script src="dist/popper.min.js"></script>-->
+<!--    <script src="dist/holder.min.js"></script>-->
+<!--    <script src="dist/js/bootstrap.min.js"></script>-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+</body>
+</html>

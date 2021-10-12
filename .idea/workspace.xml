@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f618462-ff44-40fc-b4e9-82fc596d8282" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team.html" beforeDir="false" afterPath="$PROJECT_DIR$/team.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +47,9 @@
       <workItem from="1621423882015" duration="6870000" />
       <workItem from="1622045167058" duration="5859000" />
       <workItem from="1632674676364" duration="4755000" />
-      <workItem from="1633159004215" duration="4052000" />
+      <workItem from="1633159004215" duration="4949000" />
+      <workItem from="1633978630227" duration="770000" />
+      <workItem from="1634032948699" duration="832000" />
     </task>
     <servers />
   </component>
@@ -60,9 +61,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1632737060344" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1633290040263">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1633291077304">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1633290040263" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1633291077304" />
   </component>
 </project>
